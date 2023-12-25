@@ -24,11 +24,12 @@ public class BlogsController {
 
     @PostMapping
     public ResponseEntity<String> PostBlogs(@RequestBody Blog blog){
-        if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
+      /*  if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
             throw new ExceptionCustom("Faltan datos para poder crear el blog");
         } else {
             return ResponseEntity.ok(blogServices.PostBlogs(blog));
-        }
+        }*/
+        return ResponseEntity.ok(blogServices.PostBlogs(blog));
     }
 
     @DeleteMapping("/{id}")
