@@ -1,0 +1,17 @@
+com\API\CodeLab\Controllers\BlogsController.class
+com\API\CodeLab\CodeLabApplication.class
+com\API\CodeLab\Controllers\VideosController.class
+com\API\CodeLab\Services\Impl\VideoServicesImpl.class
+com\API\CodeLab\Services\VideoServices.class
+com\API\CodeLab\Repositorys\VideoRepository.class
+com\API\CodeLab\Models\Curso.class
+com\API\CodeLab\Services\Impl\BlogServicesImpl.class
+com\API\CodeLab\Repositorys\BlogRepository.class
+com\API\CodeLab\Models\Blog.class
+com\API\CodeLab\Models\Video.class
+com\API\CodeLab\Services\CursoServices.class
+com\API\CodeLab\Controllers\CursoController.class
+com\API\CodeLab\Repositorys\CursoRepository.class
+com\API\CodeLab\ExceptionCustom\ExceptionCustom.class
+com\API\CodeLab\Services\BlogServices.class
+com\API\CodeLab\Services\Impl\CursoServicesImpl.class
