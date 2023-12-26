@@ -27,7 +27,7 @@ public class BlogServicesImpl implements BlogServices {
     @Override
     public String PostBlogs(Blog blog) {
         blogRepository.save(blog);
-        return "Curso posteado con exito!";
+        return "Blog posteado con exito!";
     }
 
     @Override

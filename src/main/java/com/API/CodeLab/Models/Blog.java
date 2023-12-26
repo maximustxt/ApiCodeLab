@@ -1,7 +1,6 @@
 package com.API.CodeLab.Models;
 
 import jakarta.persistence.*;
-
 import java.util.List;
 
 @Entity

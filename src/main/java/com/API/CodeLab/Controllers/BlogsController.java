@@ -18,18 +18,18 @@ public class BlogsController {
     private BlogServices blogServices;
 
     @GetMapping
-    public ResponseEntity<List<Blog>> GetBlog(){
-        return ResponseEntity.ok(blogServices.GetBlogs());
+    public ResponseEntity<?> GetBlog(){
+        return ResponseEntity.ok("LLEGO AL CONTROLLER");
+        //  return ResponseEntity.ok(blogServices.GetBlogs());
     }
 
-    @PostMapping
+   /* @PostMapping
     public ResponseEntity<String> PostBlogs(@RequestBody Blog blog){
-      /*  if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
+       if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
             throw new ExceptionCustom("Faltan datos para poder crear el blog");
         } else {
             return ResponseEntity.ok(blogServices.PostBlogs(blog));
-        }*/
-        return ResponseEntity.ok(blogServices.PostBlogs(blog));
+        }
     }
 
     @DeleteMapping("/{id}")
@@ -50,5 +50,5 @@ public class BlogsController {
         } else {
             return ResponseEntity.ok(blogServices.PutBlogs(blog , id));
         }
-    }
+    }*/
 }
