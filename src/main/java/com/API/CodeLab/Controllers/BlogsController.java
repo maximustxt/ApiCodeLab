@@ -15,6 +15,5 @@ public class BlogsController {
     @GetMapping
     public ResponseEntity<?> GetBlog(){
         return ResponseEntity.ok("LLEGO AL CONTROLLER");
-        //  return ResponseEntity.ok(blogServices.GetBlogs());
     }
 }
