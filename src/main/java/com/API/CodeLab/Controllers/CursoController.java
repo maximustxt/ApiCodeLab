@@ -1,9 +1,7 @@
 package com.API.CodeLab.Controllers;
 
 import com.API.CodeLab.ExceptionCustom.ExceptionCustom;
-import com.API.CodeLab.Models.Blog;
 import com.API.CodeLab.Models.Curso;
-import com.API.CodeLab.Services.BlogServices;
 import com.API.CodeLab.Services.CursoServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
