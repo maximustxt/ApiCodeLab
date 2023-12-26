@@ -25,7 +25,7 @@ public class BlogsController {
 
    @PostMapping
     public ResponseEntity<String> PostBlog(@RequestBody Blog blog){
-       if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
+       if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
             throw new ExceptionCustom("Faltan datos para poder crear el blog");
         } else {
             return ResponseEntity.ok(blogServices.PostBlogs(blog));
@@ -45,7 +45,7 @@ public class BlogsController {
     public ResponseEntity<List<Blog>> PutBlog(@RequestBody Blog blog , @PathVariable Long id ){
         if(id == null){
             throw new ExceptionCustom("El blog no se encontro");
-        } else if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
+        } else if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
             throw new ExceptionCustom("Faltan datos para poder crear el blog");
         } else {
             return ResponseEntity.ok(blogServices.PutBlogs(blog , id));

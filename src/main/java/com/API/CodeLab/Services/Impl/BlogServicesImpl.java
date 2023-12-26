@@ -43,7 +43,7 @@ public class BlogServicesImpl implements BlogServices {
         if(blog1 != null){
             blog1.setDescripcion(blog.getDescripcion());
             blog1.setImagen(blog.getImagen());
-            blog1.setImagenesDetail(blog.getImagenesDetail());
+         // blog1.setImagenesDetail(blog.getImagenesDetail());
             blog1.setSubtitulo(blog.getSubtitulo());
             blog1.setTitulo(blog.getTitulo());
             blogRepository.save(blog1);
