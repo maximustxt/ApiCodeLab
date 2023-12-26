@@ -23,8 +23,8 @@ public class BlogsController {
         //  return ResponseEntity.ok(blogServices.GetBlogs());
     }
 
-   /* @PostMapping
-    public ResponseEntity<String> PostBlogs(@RequestBody Blog blog){
+   @PostMapping
+    public ResponseEntity<String> PostBlog(@RequestBody Blog blog){
        if(blog.getDescripcion() == null || blog.getImagen() == null || blog.getImagenesDetail() == null || blog.getSubtitulo() == null || blog.getTitulo() == null) {
             throw new ExceptionCustom("Faltan datos para poder crear el blog");
         } else {
@@ -50,5 +50,5 @@ public class BlogsController {
         } else {
             return ResponseEntity.ok(blogServices.PutBlogs(blog , id));
         }
-    }*/
+    }
 }
