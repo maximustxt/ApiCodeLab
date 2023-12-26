@@ -9,7 +9,7 @@ public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-   // private List<String> imagenesDetail;
+    private List<String> imagenesDetail;
     private String titulo;
     private String subtitulo;
     private String descripcion;
@@ -20,7 +20,7 @@ public class Blog {
 
     public Blog(Long id, String titulo, String subtitulo, String descripcion, String imagen) {
         this.id = id;
-      //  this.imagenesDetail = imagenesDetail;
+        this.imagenesDetail = imagenesDetail;
         this.titulo = titulo;
         this.subtitulo = subtitulo;
         this.descripcion = descripcion;
@@ -35,14 +35,12 @@ public class Blog {
         this.id = id;
     }
 
-    /*  public List<String> getImagenesDetail() {
+     public List<String> getImagenesDetail() {
         return imagenesDetail;
     }
-
     public void setImagenesDetail(List<String> imagenesDetail) {
         this.imagenesDetail = imagenesDetail;
     }
-    */
     public String getTitulo() {
         return titulo;
     }
