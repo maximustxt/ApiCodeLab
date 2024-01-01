@@ -3,12 +3,14 @@ package com.API.CodeLab;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 import java.util.Arrays;
 
+@CrossOrigin(origins = {"https://front-code-lab.vercel.app", "http://localhost:4200"})
 @SpringBootApplication
 public class CodeLabApplication {
 
@@ -16,7 +18,7 @@ public class CodeLabApplication {
 		SpringApplication.run(CodeLabApplication.class, args);
 	}
 
-	@Bean
+	/* @Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
@@ -30,6 +32,6 @@ public class CodeLabApplication {
 		UrlBasedCorsConfigurationSource urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
-	}
+	} */
 
 }
